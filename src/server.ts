@@ -6,7 +6,7 @@ const app = Fastify();
 app.register(cors);
 
 app.get('/', () => {
-  return 'Aló Unisuam! ';
+  return 'teste ';
 });
 
 app.listen({
