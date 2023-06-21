@@ -1,0 +1,105 @@
+Script da Apresentação
+
+Abrir portas 
+api 3333 
+ssh 22
+
+conexão ssh
+user: api
+senha: 123456 
+
+Instalação do node
+
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+Instalação PM2
+
+sudo npm install pm2 -g
+
+conferindo as instalações
+
+node -v
+npm -v
+pm2 -v
+
+Mostrar a api
+
+npm run dev
+
+http://localhost:3333/
+
+mostrar build
+
+npm run build
+npm run start
+
+Criar repositorio
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vespidhook/api.git
+git push -u origin main
+
+Clonando e rodando no servidor
+
+git clone https://github.com/vespidhook/api.git
+
+cd api
+
+npm install
+npm run build
+npm run start
+
+177.132.27.93:3333
+
+PM2
+
+pm2 start dist/server.js
+
+pm2 start dist/server.js -i max
+
+Adicionar secrets
+
+SSH_HOST
+SSH_USER
+SSH_PASSWORD
+SSH_PORT
+
+Mostrar workflow
+
+Mostrar actions em ação 
+
+177.132.27.93:3333
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
